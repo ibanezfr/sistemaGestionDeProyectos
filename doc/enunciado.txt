@@ -1,0 +1,46 @@
+=============== UTN Facultad Regional La Plata - Año 2024 ======================
+
+Materia:			Sintaxis y Semántica del Lenguaje
+Encargado de la Práctica:	Ing. Félix Paternóster
+Fecha de entrega:		27 de mayo de 2024
+Grupo Nro:			01
+Integrantes:			Lucas M., Piazza J., Ibañez F.
+
+Se deberá entregar simultáneamente:
+a) La especificación de cada TAD y de la aplicación.
+b) Enviar por mail el trabajo (Código de los TADs y de la aplicación)
+c) Cada grupo deberá presentar el trabajo de forma presencial, y demostrar la 
+correcta implementación y funcionamiento.
+
+Resolver las siguientes situaciones usando la abstracción de datos. Desarrollar
+un menú en la aplicación para resolver cada punto del ejercicio.
+
+===============================================================================
+
+En un sistema de gestión de proyectos para una empresa de desarrollo de
+software, se deben administrar una serie de tareas. Cada tarea cuenta con:
+nombre, descripción, asignado, estado (pendiente, en progreso, completada)
+y fecha de vencimiento. se desea tener un menú con las siguientes opciones:
+
+a) Agregar, modificar y eliminar tarea: El sistema debe permitirle al usuario
+dar de alta, modificar los campos y eliminar una tarea.
+
+b) Listado de tareas: Muestra un listado completo de todas la tareas 
+almacenadas en el sistema, incluyendo todos sus detalles.
+
+c) Modificar fecha de vencimiento de tareas: Permite cambiar la fecha de
+vencimiento de todas las tareas que se encuentren entre dos fechas dadas.
+
+d) Generar un reporte de tareas por estado: Genera un reporte detallado que 
+muestra todas las tareas agrupadas por su estado actual (pendiente,
+en progreso, completada, etc.).
+
+e) Eliminar tareas asignadas a un empleado: Elimina todas las tareas asignadas
+a un empleado específico, liberando su carga de trabajo.
+
+f) Generar una cola de tareas cuyo estado sea "En progreso". Listar la
+cola cada vez que se elija esta opción, mostrando los datos y la cantidad
+de proyectos en este estado (tengan cuidado de no dejar la cola vacía al
+terminar de listar).
+
+
