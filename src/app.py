@@ -160,6 +160,7 @@ def opcionModificarTarea(listadoTareas, listadoEmpleados, cola):
         input(ERROR_EMPTY_STRING)
         return
     tarea = seleccionarTarea(listadoTareas)
+    estadoTemporal = verEstado(tarea)
     tareaTemporal = crearTarea()
     while True:
         print("\n\tIngrese los valores a modificar")
@@ -181,9 +182,9 @@ def opcionModificarTarea(listadoTareas, listadoEmpleados, cola):
 
     asignarTarea(tarea, tareaTemporal)
 
-    if verEstado(tarea) == "En Progreso" and verEstado(tareaTemporal) == "En Progreso":
+    if estadoTemporal == "En Progreso" and verEstado(tareaTemporal) == "En Progreso":
         modificarEncolado(cola, tarea, tareaTemporal)
-    elif verEstado(tarea) == "En Progreso":
+    elif estadoTemporal == "En Progreso":
         eliminarEncolado(cola, tarea)
     elif verEstado(tareaTemporal) == "En Progreso":
         encolar(cola, tareaTemporal)
